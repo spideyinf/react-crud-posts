@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import Posts from './Posts'
+import Posts from './components/Posts'
+import AddPost from './components/AddPost'
 
 function App() {
   const postsData = [
@@ -25,15 +26,21 @@ function App() {
 
   const [posts, setPosts] = useState(postsData)
 
+  const addPost = post => {
+    post.id = posts.length + 1
+    setPosts([...posts, post])
+  }
+
+  const deletePost = id => {
+    setPosts(posts.filter(post => post.id !== id))
+  }
+
   return (
     <div className="App">
       <h1>React CRUD Post Pages</h1>
       <div className="d-flex justify-content-center">
-        <div className="d-flex flex-row align-items-center">
-          <h3>Post</h3>
-          <button className="btn">Post</button>
-        </div>
-        <Posts posts={posts} />
+        <AddPost addPost={addPost} />
+        <Posts posts={posts} deletePost={deletePost} />
       </div>
     </div>
   )
