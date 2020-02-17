@@ -20,9 +20,9 @@ function EditPost({ setUpdating, currentPost, updatePost }) {
   }
 
   return (
-    <form onSubmit={submitForm}>
+    <form className="page__col page__col--left" onSubmit={submitForm}>
       <div className="d-flex flex-column">
-        <h3>Editing Post</h3>
+        <h2>Editing Post</h2>
         <label>Post title</label>
         <input
           type="text"
@@ -31,8 +31,8 @@ function EditPost({ setUpdating, currentPost, updatePost }) {
           onChange={handleInputChange}
         />
         <label>Post content</label>
-        <input
-          type="textarea"
+        <textarea
+          rows="3"
           name="content"
           value={post.content}
           onChange={handleInputChange}
@@ -40,7 +40,7 @@ function EditPost({ setUpdating, currentPost, updatePost }) {
         <button className="btn">Update post</button>
         <button
           onClick={() => setUpdating(false)}
-          className="btn btn-secondary"
+          className="btn btn--secondary"
         >
           Cancel
         </button>

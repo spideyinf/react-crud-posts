@@ -18,9 +18,9 @@ function AddPost({ addPost }) {
   }
 
   return (
-    <form onSubmit={submitForm}>
+    <form className="page__col page__col--left" onSubmit={submitForm}>
       <div className="d-flex flex-column">
-        <h3>Add Post</h3>
+        <h2>Add Post</h2>
         <label>Post title</label>
         <input
           type="text"
@@ -29,8 +29,8 @@ function AddPost({ addPost }) {
           onChange={handleInputChange}
         />
         <label>Post content</label>
-        <input
-          type="textarea"
+        <textarea
+          rows="3"
           name="content"
           value={post.content}
           onChange={handleInputChange}

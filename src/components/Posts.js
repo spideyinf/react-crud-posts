@@ -2,8 +2,8 @@ import React from 'react'
 
 function Posts({ posts, deletePost, editingPost }) {
   return (
-    <ul className="w-50 d-flex flex-column">
-      <h3>Posts</h3>
+    <ul className="page__col page__col--right d-flex flex-column">
+      <h2>Posts</h2>
       {posts.length > 0 ? (
         posts.map(post => (
           <li className="d-flex flex-column" key={post.id}>

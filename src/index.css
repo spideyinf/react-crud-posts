@@ -1,0 +1,68 @@
+body,
+* {
+  font-family: 'Arsenal', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+h2 {
+  margin-bottom: 8px;
+}
+
+p {
+  margin: 0 0 8px;
+}
+
+.page__title {
+  display: block;
+  width: 100%;
+  padding: 24px 0;
+  margin: 0;
+  background: #ededed;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.page__container {
+  max-width: 1140px;
+  margin: 0 auto;
+  min-height: 80vh;
+}
+
+.page__col {
+  background: #ededed;
+  padding: 16px;
+  margin: 24px 8px;
+  border-radius: 8px;
+}
+
+.page__col--left {
+  flex: 1 1 35%;
+}
+
+.page__col--right {
+  flex: 1 1 65%;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  margin-right: 8px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  background-color: #888;
+  min-width: 68px;
+  max-width: 118px;
+  border-radius: 9999px;
+}
+
+.btn--warning {
+  background-color: #fe6821;
+}
+
+.btn--secondary {
+  background: #999;
+}

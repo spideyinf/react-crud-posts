@@ -52,8 +52,8 @@ function App() {
 
   return (
     <div className="App">
-      <h1>React CRUD Post Pages</h1>
-      <div className="d-flex justify-content-center">
+      <h1 className="page__title">React CRUD Post Pages</h1>
+      <main className="page__container d-flex justify-content-center">
         {updating ? (
           <EditPost
             updating={updating}
@@ -70,7 +70,7 @@ function App() {
           deletePost={deletePost}
           editingPost={editingPost}
         />
-      </div>
+      </main>
     </div>
   )
 }
