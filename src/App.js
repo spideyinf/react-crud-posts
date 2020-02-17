@@ -40,9 +40,9 @@ function App() {
     setPosts(posts.filter(post => post.id !== id))
   }
 
-  const editingPost = (id, title, content) => {
+  const editingPost = post => {
     setUpdating(true)
-    setCurrentPost({ id, title, content })
+    setCurrentPost({ id: post.id, title: post.title, content: post.content })
   }
 
   const updatePost = (id, updatedPost) => {
