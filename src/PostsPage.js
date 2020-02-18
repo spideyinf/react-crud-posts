@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { useHistory } from 'react-router-dom'
+
 import Posts from './components/Posts'
 import AddPost from './components/AddPost'
 import EditPost from './components/EditPost'
@@ -30,6 +32,7 @@ function PostsPage() {
   const [posts, setPosts] = useState(postsData)
   const [updating, setUpdating] = useState(false)
   const [currentPost, setCurrentPost] = useState(initialFormState)
+  const history = useHistory()
 
   const addPost = post => {
     post.id = posts.length + 1
@@ -71,6 +74,11 @@ function PostsPage() {
           editingPost={editingPost}
         />
       </main>
+      <div className="btn-wrapper">
+        <button className="btn btn--primary" onClick={() => history.push('/')}>
+          Logout
+        </button>
+      </div>
     </div>
   )
 }

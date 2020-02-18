@@ -15,6 +15,26 @@ p {
   margin: 0 0 8px;
 }
 
+label {
+  margin-bottom: 6px;
+}
+
+input,
+textarea {
+  padding: 8px 6px;
+  margin-bottom: 8px;
+  border: 0;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+.w-25 {
+  width: 25%;
+}
+
 .page__title {
   display: block;
   width: 100%;
@@ -28,7 +48,7 @@ p {
 .page__container {
   max-width: 1140px;
   margin: 0 auto;
-  min-height: 80vh;
+  min-height: 75vh;
 }
 
 .page__col {
@@ -46,9 +66,17 @@ p {
   flex: 1 1 65%;
 }
 
+.btn-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px 0;
+}
+
 .btn {
   display: inline-block;
-  padding: 10px 16px;
+  padding: 10px 32px;
   margin-right: 8px;
   border: 0;
   cursor: pointer;
@@ -61,6 +89,11 @@ p {
 
 .btn--warning {
   background-color: #fe6821;
+}
+
+.btn--primary {
+  min-width: 132px;
+  max-width: auto;
 }
 
 .btn--secondary {

@@ -37,13 +37,15 @@ function EditPost({ setUpdating, currentPost, updatePost }) {
           value={post.content}
           onChange={handleInputChange}
         />
-        <button className="btn">Update post</button>
-        <button
-          onClick={() => setUpdating(false)}
-          className="btn btn--secondary"
-        >
-          Cancel
-        </button>
+        <div className="btn-wrapper">
+          <button className="btn">Update post</button>
+          <button
+            onClick={() => setUpdating(false)}
+            className="btn btn--secondary"
+          >
+            Cancel
+          </button>
+        </div>
       </div>
     </form>
   )

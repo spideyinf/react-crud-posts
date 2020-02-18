@@ -35,7 +35,9 @@ function AddPost({ addPost }) {
           value={post.content}
           onChange={handleInputChange}
         />
-        <button className="btn">Post</button>
+        <div className="btn-wrapper">
+          <button className="btn btn--primary">Post</button>
+        </div>
       </div>
     </form>
   )
