@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Watch Output.gif for the DEMO
 
-Simple React CRUD Post page
+Simple React CRUD Post page with Hooks
 
 - Login page
   - username: admin
